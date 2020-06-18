@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+	
+	<suite name ="Testng Parameters">
+
+	<test name="different tetng Parameters">
+
+	<parameter name="url" value="https://login.yahoo.com/"/>
+
+	<classes>
+		<class name ="com.TesngXmlPractice.TestTestngXml" />
+			       
+		</classes> 
+	
+	</test>
+	
+	</suite>
+		

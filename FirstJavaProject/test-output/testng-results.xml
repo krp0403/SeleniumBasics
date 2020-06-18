@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46889" started-at="2020-06-09T02:42:28Z" finished-at="2020-06-09T02:43:15Z">
+    <groups>
+      <group name="LinkTest">
+        <method signature="GoogleTest.mailTextTest()[pri:1, instance:com.test.GoogleTest@39aeed2f]" name="mailTextTest" class="com.test.GoogleTest"/>
+      </group> <!-- LinkTest -->
+      <group name="Title">
+        <method signature="GoogleTest.GoogleTitleTest()[pri:3, instance:com.test.GoogleTest@39aeed2f]" name="GoogleTitleTest" class="com.test.GoogleTest"/>
+      </group> <!-- Title -->
+      <group name="Logo">
+        <method signature="GoogleTest.GoogleLogoTest()[pri:2, instance:com.test.GoogleTest@39aeed2f]" name="GoogleLogoTest" class="com.test.GoogleTest"/>
+      </group> <!-- Logo -->
+    </groups>
+    <test name="Default test" duration-ms="46889" started-at="2020-06-09T02:42:28Z" finished-at="2020-06-09T02:43:15Z">
+      <class name="com.test.GoogleTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="setup" is-config="true" duration-ms="20276" started-at="2020-06-09T08:12:28Z" finished-at="2020-06-09T08:12:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="mailTextTest()[pri:1, instance:com.test.GoogleTest@39aeed2f]" name="mailTextTest" duration-ms="203" started-at="2020-06-09T08:12:48Z" finished-at="2020-06-09T08:12:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailTextTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="TearDown" is-config="true" duration-ms="2085" started-at="2020-06-09T08:12:49Z" finished-at="2020-06-09T08:12:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="setup" is-config="true" duration-ms="11410" started-at="2020-06-09T08:12:51Z" finished-at="2020-06-09T08:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="GoogleLogoTest()[pri:2, instance:com.test.GoogleTest@39aeed2f]" name="GoogleLogoTest" duration-ms="203" started-at="2020-06-09T08:13:02Z" finished-at="2020-06-09T08:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleLogoTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="TearDown" is-config="true" duration-ms="1101" started-at="2020-06-09T08:13:02Z" finished-at="2020-06-09T08:13:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="setup" is-config="true" duration-ms="9900" started-at="2020-06-09T08:13:03Z" finished-at="2020-06-09T08:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="GoogleTitleTest()[pri:3, instance:com.test.GoogleTest@39aeed2f]" name="GoogleTitleTest" duration-ms="33" started-at="2020-06-09T08:13:13Z" finished-at="2020-06-09T08:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleTitleTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.GoogleTest@39aeed2f]" name="TearDown" is-config="true" duration-ms="1627" started-at="2020-06-09T08:13:13Z" finished-at="2020-06-09T08:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.test.GoogleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,49 @@
+// ### Arrays#####
+
+package JavaBasics;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		int i[]= new int[5];
+		
+		i[0]=10;
+		i[1]=20;
+		i[2]=30;
+		i[3]=40;
+		i[4]=50;
+		
+		for(int j=0; j<i.length;j++){
+			System.out.println("The value of i is " +i[j]);
+		}
+//	Similarly we can have arrays of all types: boolean, string, double etc.
+// if we try and access the array index[4](ex: j<=i.length instead of j<i.length). which does not exist. Then it will give an exception called. ArrayIndexOutOfBounds exception.
+
+		
+//disadvantages: 
+//		1. Static in size : - To overcome these disadvantages we use---> collections, ArrayLists,HashTables, dynamic arrays.
+//		2. Stores only similar data type objects.: To overcome this we use ----> Object arrays.
+
+// ##Lets see how to create object arrays;
+		
+		Object obj[] = new Object[6];
+		obj[0]= "Tom";
+		obj[1]= "20000";
+		obj[3]= "1-1-2020";
+		obj[4]= 'M';
+		obj[5]= 12.555;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

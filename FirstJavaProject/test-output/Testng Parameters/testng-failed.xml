@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testng Parameters]">
+  <parameter name="url" value="https://login.yahoo.com/"/>
+  <test name="different tetng Parameters(failed)">
+    <parameter name="url" value="https://login.yahoo.com/"/>
+    <classes>
+      <class name="com.TesngXmlPractice.TestTestngXml">
+        <methods>
+          <include name="TestXml" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TesngXmlPractice.TestTestngXml -->
+    </classes>
+  </test> <!-- different tetng Parameters(failed) -->
+</suite> <!-- Failed suite [Testng Parameters] -->

@@ -1,0 +1,25 @@
+package OOPsConcepts1;
+
+public class ClassConcepts {
+
+
+	// declare global vars.
+
+	int a;
+	String b;
+	int c;
+
+	public static void main(String[] args) {
+
+		// lest see how to define objects of the class.
+
+ClassConcepts C1 = new ClassConcepts();
+// LHS -->> Class name + object reference id 
+// RHS == new (creator) classname(); the name of the class for which object is created.
+// so C1 is the object reference of the class Class ClassConcepts.
+
+
+
+	}
+
+}

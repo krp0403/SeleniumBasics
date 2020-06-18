@@ -1,0 +1,14 @@
+package OOPsConcept2;
+
+public class childClass1 extends parent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		childClass1 c1 = new childClass1 ();
+		c1.print();
+		c1.callFromChild();
+	}
+
+	
+}

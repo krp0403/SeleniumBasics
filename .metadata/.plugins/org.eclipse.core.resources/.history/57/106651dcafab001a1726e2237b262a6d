@@ -1,0 +1,19 @@
+package OOPsConcepts1;
+
+public class ClassConcepts {
+
+	
+	// declare global vars.
+	
+	int a;
+	String b;
+	int c;
+	
+	public static void main(String[] args) {
+
+		
+		
+
+	}
+
+}

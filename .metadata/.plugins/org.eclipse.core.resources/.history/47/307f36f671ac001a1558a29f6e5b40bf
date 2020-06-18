@@ -1,0 +1,18 @@
+package OOPsConcept2;
+/* Interfaces are abstract in nature
+ * Interfaces do not have function definition.
+ * they only have function declarations.
+ * we cannot change values of the variables declared in an interface.
+ * variables are by default static in an interface.
+ * Most importantly we cannot create objects of an interface. 
+ */
+public interface InterfaceExamples {
+
+	
+	public void interface1();
+	
+	public void interface2();
+	
+	public void interface3();
+	
+}

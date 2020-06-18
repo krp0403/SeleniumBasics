@@ -1,0 +1,61 @@
+package SeleniumSessions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class CustomXpath {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver","E:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		WebDriver drive = new ChromeDriver();
+	
+		
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
+		
+		driver.get("https://www.bing.com/?cc=in");
+		driver.findElement(By.xpath("//input[@class='sb_form_q']")).sendKeys("Google");
+		driver.findElement(By.xpath("//input[@class='sb_form_q']")).sendKeys(Keys.ENTER);
+//		Actions Action = new Actions(driver);
+//		Action.sendKeys(Keys.ENTER);
+		System.out.println("This is good so far");
+		//driver.findElement(By.xpath(//))
+		
+		
+		//driver.get("https://www.goair.in/");
+		drive.get("https://www.bing.com/");
+		/*driver.findElement(By.xpath("//a[@class='umb-home-tabs-bord']")).click();
+		driver.findElement(By.xpath("//input[@class='umb-home-web-check-input1 managepnr']")).sendKeys("abcd1234");
+		driver.findElement(By.xpath("//input[@class='umb-home-web-check-input manageemail']")).sendKeys("Used");
+		System.out.println("Am getting it slow and steady");
+		driver.findElement(By.xpath("//button[@class='umb-home-flight-submit-btn1 managebooking']")).click();
+		*/
+		//Thread.sleep(500);
+		 //There are 2 more methods to create xpath. using contains and starts-with function.
+		drive.findElement(By.xpath("//input[contains(@class,'sb_form_')]")).sendKeys("google");
+		drive.findElement(By.xpath("//input[contains(@class,'sb_form_')]")).sendKeys(Keys.ENTER);
+		//Lets try using starts with 
+		//driver.findElement(By.xpath("//input[starts-with(@class,'sb_form_')]")).sendKeys("google");
+		// there is also a similar method called "ends-with" all remaining syntax remains same.
+		
+		
+		// lets see the custom xpath for links.
+		//driver.findElement(By.xpath("//span[contains(text(),'Sign in')]")).click();
+		
+		//driver.close();
+		
+		
+		
+	}
+
+}

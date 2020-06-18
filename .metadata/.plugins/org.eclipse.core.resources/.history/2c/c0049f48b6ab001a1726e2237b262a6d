@@ -1,0 +1,32 @@
+package OOPsConcepts1;
+// This program deals with function, their types, definitions and calls.
+
+public class FunctionsInJava {
+
+	public static void main(String[] args) {
+
+		FunctionsInJava a = new FunctionsInJava();
+		a.ReturnNothing();
+		a.ReturnsInt();
+		a.TakesInputReturnsInt(10, 5);
+	}
+	// 1st type of function that does not take any input and does not return anything
+
+	public void ReturnNothing(){
+		System.out.println("In ReturnsNothing function");
+
+	}
+
+	public int ReturnsInt(){
+		System.out.println("In function ReturnsInt");
+		int a=4; int b=5;int c=a+b;
+		return c;
+
+	}
+
+	public int TakesInputReturnsInt(int i, int j){
+		
+		int k=i/j;
+		return k;
+	}
+}

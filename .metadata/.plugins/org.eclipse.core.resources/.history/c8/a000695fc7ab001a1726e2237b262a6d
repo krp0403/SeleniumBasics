@@ -1,0 +1,19 @@
+package OOPsConcepts1;
+
+public class StaticNonStaticClassConcepts {
+
+	String name = "tom"; // non static global var.
+	static int age = 30; // static global variable.
+	
+	public static void main(String[] args) {
+		
+		
+	public void test1(){
+
+	}
+	
+	public static test2(){
+		
+	}
+
+}

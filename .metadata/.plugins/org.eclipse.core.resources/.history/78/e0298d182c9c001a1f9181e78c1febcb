@@ -1,0 +1,57 @@
+package SeleniumSessions;
+
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowPopUpHandler {
+
+	public static void main(String[] args) {
+		
+		
+		
+			
+			
+			System.setProperty("webdriver.chrome.driver","E:\\selenium\\chromedriver_win32\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+		
+			
+			driver.manage().deleteAllCookies();
+			driver.manage().window().maximize();
+			
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
+			
+			driver.get("http://popuptest.com/goodpopups.html");
+			driver.findElement(By.xpath("//a[contains(text(),'3')]")).click();
+			System.out.println("pop up opened");
+			
+	// handler is a object of set class imported from java util.
+			Set<String> handler = driver.getWindowHandles();
+			
+			Iterator<String> it =  handler.iterator();
+			String ParentWindowId = it.next();
+			System.out.println("Parent window id is " +ParentWindowId);
+			
+			String childWindowId = it.next();
+			System.out.println("The child window id is " +childWindowId );
+			
+			driver.switchTo().window(childWindowId);
+			System.out.println("Child window pop up title is "+ driver.getTitle());
+			driver.close();
+			
+			driver.switchTo().window(ParentWindowId);
+			System.out.println("The title of parent window is" + driver.getTitle());
+			
+				
+			}
+			
+			
+	}
+
+}

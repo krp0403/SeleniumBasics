@@ -1,0 +1,39 @@
+package OOPsConcepts1;
+
+public class ClassConcepts {
+
+
+	// declare global vars.
+
+	int a;
+	String b;
+	int c;
+
+	public static void main(String[] args) {
+
+		// lest see how to define objects of the class.
+
+ClassConcepts C1 = new ClassConcepts();
+ClassConcepts C2 = new ClassConcepts();
+ClassConcepts C3 = new ClassConcepts();
+// LHS -->> Class name + object reference id 
+// RHS == new (creator) classname(); the name of the class for which object is created.
+// RHS is the object represented by the reference variable of the class named on the lhs.
+// so C1 is the object reference of the class Class ClassConcepts.
+// we cannot create duplicate objects. (with the same names).
+
+// lets use the global variables in the objects created.
+
+C1.a= 2020;
+C1.b = "June";
+C1.c = 18;
+
+C2.a=2020;
+C2.b= "May";
+C2.c= 20;
+
+
+
+	}
+
+}

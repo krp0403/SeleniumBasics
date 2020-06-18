@@ -1,0 +1,22 @@
+package OOPsConcept2;
+/* Interfaces are abstract in nature
+ * Interfaces do not have function definition.
+ * they only have function declarations.
+ * we cannot change values of the variables declared in an interface.
+ * variables are by default static in an interface.
+ * Most importantly we cannot create objects of an interface. 
+ * class implementing the interface has to implement (define) all the methods in Interface. And have its own additional methods as well.
+ * example:--->  public class ImplementsExample implements InterfaceExamples { has to implenment all the methods from "interfaceexamples".
+
+ */
+public interface InterfaceExamples {
+
+	int interfaceInt = 100; // static and final by default.
+	
+	public void interface1();
+	
+	public void interface2();
+	
+	public void interface3();
+	
+}

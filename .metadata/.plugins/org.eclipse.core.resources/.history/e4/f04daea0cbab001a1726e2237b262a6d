@@ -1,0 +1,14 @@
+package OOPsConcepts1;
+
+public class WrapperClassConcepts {
+
+//	wrapper classes are used to convert data type A into data type B;
+	public static void main(String[] args) {
+
+		String a = "100";
+		int b = 20;
+		System.out.println(a+b);
+
+	}
+
+}
